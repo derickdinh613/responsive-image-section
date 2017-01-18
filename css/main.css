@@ -1,15 +1,20 @@
-html {
   @-moz-viewport { width: device-width; scale: 1; }
   @-ms-viewport { width: device-width; scale: 1; }
   @-o-viewport { width: device-width; scale: 1; }
   @-webkit-viewport { width: device-width; scale: 1; }
   @viewport { width: device-width; scale: 1; }
-}
 
 html {
-  font-family: sans-serif;
-  background-color: #e2e2e2;
+    box-sizing: border-box;
+  }
+
+  *, *::before, *::after {
+    box-sizing: inherit;
+    font-family: sans-serif;
+    background-color: #e2e2e2;
+  }
 }
+
 
 .btn {
   padding: 0.75em;
@@ -24,8 +29,16 @@ a:hover {
   background-color: #000;
 }
 
+body {
+  margin: 0;
+}
+
 h2 {
   margin-bottom: 0;
+}
+
+section {
+  margin: 0;
 }
 
 .img-flex {
